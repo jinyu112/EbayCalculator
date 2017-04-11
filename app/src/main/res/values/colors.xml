@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lblue">#0e86d2</color>
+    <color name="white">#ffffff</color>
+    <color name="dblue">#303e49</color>
+    <color name="profitblue">#6dc8ff</color>
+    <color name="inactiveblue">#3298da</color>
+</resources>

@@ -1,0 +1,359 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/activityRoot">
+        <!--        Total price       -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/lblue"
+            android:orientation="horizontal">
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/sold_price"
+                android:id="@+id/textView1"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:gravity="center_vertical"/>
+            <com.designedbyhumans.finalfeecalc.helveticaEditText
+                style="@style/input_style_num"
+                android:id="@+id/editText1"
+                android:inputType="number"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:gravity="end|center_vertical"
+                android:maxLength="9"/>
+        </LinearLayout>
+
+        <!--        Shipping charge        -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/lblue"
+            android:orientation="horizontal">
+
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/shipping_customer"
+                android:id="@+id/textView2"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:gravity="center_vertical"/>
+            <com.designedbyhumans.finalfeecalc.helveticaEditText
+                style="@style/input_style_num"
+                android:id="@+id/editText2"
+                android:inputType="number"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:text=""
+                android:gravity="end|center_vertical"
+                android:maxLength="9"/>
+        </LinearLayout>
+
+        <!--        Shipping cost        -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/lblue"
+            android:orientation="horizontal">
+
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/shipping_cost"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:id="@+id/textView3"
+                android:singleLine="true"
+                android:gravity="center_vertical"/>
+            <com.designedbyhumans.finalfeecalc.helveticaEditText
+                style="@style/input_style_num"
+                android:id="@+id/editText3"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:gravity="end|center_vertical"
+                android:maxLength="9"/>
+        </LinearLayout>
+
+
+        <!--        Item Cost       -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/lblue"
+            android:orientation="horizontal">
+
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/item_cost"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_set"
+                android:singleLine="true"
+                android:id="@+id/textView4"
+                android:gravity="center_vertical"/>
+            <com.designedbyhumans.finalfeecalc.helveticaEditText
+                style="@style/input_style_num"
+                android:id="@+id/editText4"
+                android:inputType="number"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/border_set"
+                android:gravity="end|center_vertical"
+                android:imeOptions="actionDone"
+                android:maxLength="9"/>
+        </LinearLayout>
+
+        <!--        Discounts        -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/lblue"
+            android:orientation="horizontal">
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/discounts"
+                android:id="@+id/discount"
+                android:onClick="goToDiscounts"
+                android:clickable="true"
+                android:singleLine="true"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:background="@drawable/border_set"
+                android:gravity="center_vertical"/>
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/none"
+                android:id="@+id/discountClick"
+                android:onClick="goToDiscounts"
+                android:clickable="true"
+                android:singleLine="true"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:background="@drawable/border_set"
+                android:gravity="end|center_vertical"/>
+        </LinearLayout>
+
+        <!--        Category        -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/lblue"
+            android:orientation="horizontal">
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/top_seller"
+                android:id="@+id/category"
+                android:onClick="goToCategories"
+                android:clickable="true"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:singleLine="true"
+                android:background="@drawable/border_set"
+                android:gravity="center_vertical"/>
+
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/other"
+                android:id="@+id/categoryClick"
+                android:onClick="goToCategories"
+                android:clickable="true"
+                android:singleLine="true"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:background="@drawable/border_set"
+                android:gravity="end|center_vertical"/>
+
+    </LinearLayout>
+
+
+    <!--       Output       -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/dblue"
+            android:orientation="horizontal">
+
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/paypal_fee"
+                android:background="@drawable/border_set_dblue"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:id="@+id/textView7" />
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/input_style_num"
+                android:text=""
+                android:id="@+id/textView8"
+                android:background="@drawable/border_set_dblue"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:singleLine="true"
+                android:gravity="end|center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/dblue"
+            android:orientation="horizontal">
+
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/text_style"
+                android:text="@string/ebay_fee"
+                android:background="@drawable/border_set_dblue"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:id="@+id/textView5" />
+            <com.designedbyhumans.finalfeecalc.helveticaTextView
+                style="@style/input_style_num"
+                android:text=""
+                android:id="@+id/textView6"
+                android:background="@drawable/border_set_dblue"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:gravity="end|center_vertical"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:background="@color/dblue"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.designedbyhumans.finalfeecalc.helveticaTextView
+                    style="@style/text_style"
+                    android:text="@string/profit"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:id="@+id/textView9" />
+                <com.designedbyhumans.finalfeecalc.helveticaTextView
+                    style="@style/profit_style"
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_weight="75"
+                    android:singleLine="true"
+                    android:gravity="end|center_vertical"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/dblue"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/relLayout">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/buttonclear"
+                    android:src="@mipmap/cancel"
+                    android:clickable="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/help"
+                    android:src="@mipmap/help"
+                    android:clickable="true"
+                    android:onClick="goToHelp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/buttonclear"
+                    android:layout_toRightOf="@+id/buttonclear"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/check"
+                    android:id="@+id/button"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mainActivityAdLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.mopub.mobileads.MoPubView
+            android:id="@+id/bannerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+
+
+
+    </LinearLayout>

@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.designedbyhumans.finalfeecalc.categories"
+    android:orientation="vertical"
+    android:background="@color/lblue"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/other"
+            android:id="@+id/textView21"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/tools_supplies"
+            android:id="@+id/textView22"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/coins_paper_money"
+            android:id="@+id/textView23"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/computer_tablets"
+            android:id="@+id/textView24"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/electronics"
+            android:id="@+id/textView25"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/music_instruments"
+            android:id="@+id/textView26"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <com.designedbyhumans.finalfeecalc.helveticaTextView
+            style="@style/text_style"
+            android:text="@string/stamps"
+            android:id="@+id/textView27"
+            android:onClick="setCategory"
+            android:clickable="true"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_set"/>
+    </LinearLayout>
+
+</LinearLayout>
